@@ -1,0 +1,31 @@
+# Bot Pyautogui
+
+import pyautogui
+
+pyautogui.PAUSE = 3
+
+# abrir a ferramenta/ o sistema/ o programa
+pyautogui.press("win")
+pyautogui.write("login.xlsx")
+pyautogui.press("backspace")
+pyautogui.press("enter")
+
+# preencher o Login
+pyautogui.click(x=500, y=186)
+pyautogui.write("user")
+
+# preencher a senha
+pyautogui.click(x=511, y=225)
+pyautogui.write("1234")
+
+# clicar em fazer login
+pyautogui.click(x=491, y=347)
+
+
+
+
+
+import time
+
+time.sleep(5)
+pyautogui.position()
